@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ansible-experiment"
+version = "0.1.0"
+description = ""
+authors = ["nicolearagao <nicolearagao@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ansible = "^11.1.0"
+ansible-runner = "^2.4.0"
+netaddr = "^1.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
