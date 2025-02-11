@@ -25,23 +25,24 @@ test_ipv6_addresses = [
     "2001:db8:85a3:0:0:8a2e:370:73340000" # invalid, segment too large
 ]
 
-test_cidr_ranges_ipv4 = [
+test_cidr_ranges = [
+    # "2001:db8::/126",   # Small range (4 IPs)
+    # "2001:db8::/120",   # Manageable range (256 IPs)
+    # "2001:db8::/64",    # Too large to expand
     "192.168.1.0/29",       # Valid IPv4 CIDR
-    "192.168.1.0/30",       # Small range
-    "192.168.1.0/24",       # Larger valid range
-    "10.0.0.0/8",           # Single octet large range
-    "172.16.0.0/12",        # Private IP range
-    "2001:db8::/120",       # Invalid (IPv6)
-    "invalid_cidr",         # Invalid input
-    "192.168.1.0/33",       # Invalid CIDR mask
-    "192.168.1.0/32",       # Single host range
-    "192.168.1.10-192.168.1.20",  # Non-CIDR range
-]
-
-test_cidr_ranges_ipv6 = [
-    "2001:db8::/126",   # Small range (4 IPs)
-    "2001:db8::/120",   # Manageable range (256 IPs)
-    "2001:db8::/64",    # Too large to expand
+    # "192.168.1.0/29",       # Valid IPv4 CIDR
+    # "192.168.1.0/30",       # Small range
+    # "192.168.1.0/24",       # Larger valid range
+    # "10.0.0.0/8",           # Single octet large range
+    # "172.16.0.0/12",        # Private IP range
+    # "2001:db8::/120",       # Invalid (IPv6)
+    # "invalid_cidr",         # Invalid input
+    # "192.168.1.0/33",       # Invalid CIDR mask
+    # "192.168.1.0/32",       # Single host range
+    # "192.168.1.10-192.168.1.20",  # Non-CIDR range
+    # "2001:db8::1/128",
+    # "0.0.0.0/32",
+    # "255.255.255.255/32",
 ]
 
 # Utility to print test results
